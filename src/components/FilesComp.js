@@ -1,30 +1,21 @@
 import React, { useState } from "react";
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { DropzoneArea } from "material-ui-dropzone";
-import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Input from '@mui/material/Input';
-import Stack from '@mui/material/Stack';
-import DeleteIcon from '@mui/icons-material/Delete';
 import SendIcon from '@mui/icons-material/Send';
-
-
 
 function FilesComp() {
   const [fImage, setFimage] = useState(false);
   const [bImage, setBimage] = useState(false);
   const [file, setFile] = useState(false);
 
-  console.log("first image button: ",fImage);
-  console.log("second image button: ",bImage);
-  console.log("files: ",file);
-  console.log("send: ",file&&bImage&&fImage)
+  // console.log("first image button: ",fImage);
+  // console.log("second image button: ",bImage);
+  // console.log("files: ",file);
+  // console.log("send: ",file&&bImage&&fImage)
 
-//To hide inputs
-  const Input = styled('input')({
-    display: 'none',
-  });
 
 //Dropzoneare style
   const useStyles = makeStyles(theme => createStyles({
@@ -39,25 +30,22 @@ function FilesComp() {
       sx={{
         width: '50vw',
         height: '75vh',
-        bgcolor: 'primary.dark',
         borderRadius: 10,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-evenly',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundImage:'linear-gradient(45deg, rgba(245, 245, 245, 0.7) 30%, rgba(183,177,165,0.5) 30% 60%, rgba(245, 245, 245, 0.7) 60%)'
       }}>
       <label htmlFor="contained-button-file">
-        <Button variant="contained" component="span"  sx={{ bgcolor: 'orange' }}>
-          Upload
-        </Button>
-        <Input accept="image/*" id="contained-button-file" filesLimit={1} onChange={()=>setFimage(true)} type="file" />
+        <p>Please upload the <b>front</b> of your passport.</p><br/>
+        <Input accept="image/*" id="contained-button-file" filesLimit={1} onChange={()=>setFimage(true)} type="file"/>
       </label>
       <label htmlFor="contained-button-file1">
-        <Button variant="contained" component="span"  sx={{ bgcolor: 'orange' }}>
-          Upload
-        </Button>
-        <Input accept="image/*" id="contained-button-file1" filesLimit={1} onChange={()=>setBimage(true)} type="file" />
+      <p>Please upload the <b>back</b> of your passport.</p><br/>
+        <Input accept="image/*" id="contained-button-file1" filesLimit={1} onChange={()=>setBimage(true)} type="file"/>
       </label>
+      <p style={{marginBottom:'-40px'}}>Please upload your <b>payslip(s)</b>.</p>
       <Box sx={{
         width: '20vw',
         height: '25vh',
@@ -79,6 +67,7 @@ function FilesComp() {
           variant="contained"
           endIcon={<SendIcon />}
           disabled={file&&bImage&&fImage ? false : true}
+          sx={{bgcolor: '#F5F5F5', color:'black'}}
         >
           Send
         </Button>
