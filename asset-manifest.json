@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/novahitec-task/static/css/main.f6e58ed2.chunk.css",
+    "main.js": "/novahitec-task/static/js/main.0ae59a2f.chunk.js",
+    "main.js.map": "/novahitec-task/static/js/main.0ae59a2f.chunk.js.map",
+    "runtime-main.js": "/novahitec-task/static/js/runtime-main.0bca9ed4.js",
+    "runtime-main.js.map": "/novahitec-task/static/js/runtime-main.0bca9ed4.js.map",
+    "static/js/2.bfbc15c6.chunk.js": "/novahitec-task/static/js/2.bfbc15c6.chunk.js",
+    "static/js/2.bfbc15c6.chunk.js.map": "/novahitec-task/static/js/2.bfbc15c6.chunk.js.map",
+    "index.html": "/novahitec-task/index.html",
+    "static/css/main.f6e58ed2.chunk.css.map": "/novahitec-task/static/css/main.f6e58ed2.chunk.css.map",
+    "static/js/2.bfbc15c6.chunk.js.LICENSE.txt": "/novahitec-task/static/js/2.bfbc15c6.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/novahitec-task/static/media/etienne-martin-2_K82gx9Uk8-unsplash.40bcf718.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bca9ed4.js",
+    "static/js/2.bfbc15c6.chunk.js",
+    "static/css/main.f6e58ed2.chunk.css",
+    "static/js/main.0ae59a2f.chunk.js"
+  ]
+}
